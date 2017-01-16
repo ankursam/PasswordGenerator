@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Password Generator</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="stylesheets/style.css">
+
+  <script language="javascript">
+  <!---
+
+  function ValidateForm()
+  {
+
+    if (document.choice.choice1.checked || document.choice.choice2.checked || document.choice.choice3.checked)
+    {
+      document.choice.submit();
+    }
+    else
+    {
+      alert ("You must check at least one box");
+    }
+
+  }
+
+  -->
+  </script>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <td style= "width:30%;">
+        <img class = "newappIcon" src="images/newapp-icon.png">
+      </td>
+      <td>
+        <h2 id="message">Generate New Password</h2>
+        <form name=choice method="get" action="/generate">
+          <input type="checkbox" id="choice1" name="choice1" value="num" checked>Include Numbers<br>
+          <input type="checkbox" id="choice2" name="choice2" value="alpha" checked>Include Alphabets<br>
+          <input type="checkbox" id="choice3" name="choice3" value="special" >Include Special Characters<br>
+          <p>
+            <button class="button button1" type="button" onclick="ValidateForm();">Generate password</button>
+          </p>
+        </form>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

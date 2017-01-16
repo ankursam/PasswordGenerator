@@ -1,0 +1,23 @@
+{
+  "name": "NodejsStarterApp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "alert": "^1.0.0",
+    "body-parser": "^1.15.2",
+    "cfenv": "1.0.x",
+    "connect": "^3.5.0",
+    "express": "4.13.x",
+    "formidable": "^1.0.17",
+    "jade": "^1.11.0",
+    "prompt": "^1.0.0",
+    "pug": "^2.0.0-beta6"
+  },
+  "repository": {},
+  "engines": {
+    "node": "4.x"
+  }
+}

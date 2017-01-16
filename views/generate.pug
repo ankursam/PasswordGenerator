@@ -1,0 +1,25 @@
+DOCTYPE
+html
+head
+  title Password Generator
+  meta(charset="utf-8")
+  meta(http-equiv="X-UA-Compatible",content="IE=edge")
+  meta(name="viewport", content="width=device-width, initial-scale=1")
+  link(rel="stylesheet", href="stylesheets/style.css")
+body
+  table
+    tr
+      td(style= "width:30%;")
+        img(class = "newappIcon", src="images/lock-icon.png")
+      td
+        form(name=home, method="get", action="/")
+          p
+            input(name="homebtn", type="image", src="images/home.png", alt="Submit", style= "width:5%;")
+        h2(id="message") Password Generated
+        h4(id="message", style = "font-family : courier; color : #00ffbf") #{msg}
+        form(name=choice, method="get", action="/generate")
+          p
+            input(name="choice1", type="hidden", value= choice1)
+            input(name="choice2", type="hidden", value= choice2)
+            input(name="choice3", type="hidden", value= choice3)
+            button(class="button button1", type="submit") Generate Another
